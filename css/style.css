@@ -15,6 +15,7 @@
 	height: 100vh;
 	background-color: aliceblue;
 }
+
 /* Flex Styles */
 .flex {
 	display: flex;
@@ -24,8 +25,15 @@
 /* Header */
 header {
 	background-color: darkgray;
+	text-align: right;
+	position: fixed;
+	height: 70px;
+	width: 100vw;
 }
 
+.nav {
+	background-color: darkgray;
+}
 .nav,
 .nav ul {
 	flex-direction: column;
@@ -66,4 +74,8 @@ header {
 /* Contact */
 #contact {
 	background-color: teal;
+}
+
+.hide {
+	display: none;
 }
