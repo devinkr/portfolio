@@ -1,0 +1,47 @@
+/* Base & Utility Styles */
+* {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Flex Styles */
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Header */
+header {
+	background-color: darkgray;
+}
+
+.nav,
+.nav ul {
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+	.nav,
+	.nav ul {
+		flex-direction: row;
+	}
+	.nav {
+		justify-content: space-between;
+	}
+}
+
+/* Main */
+
+/* About */
+
+/* Resume */
+
+/* Projects */
