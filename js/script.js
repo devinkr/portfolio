@@ -7,10 +7,11 @@ hamBtnEl.addEventListener('click', toggleHam);
 
 /* Functions */
 function toggleHam() {
-	navEl.classList.toggle('hide');
 	if (hamBtnEl.ariaExpanded === 'true') {
+		navEl.style = 'display: none';
 		hamBtnEl.ariaExpanded = 'false';
 	} else {
+		navEl.style = 'display: flex';
 		hamBtnEl.ariaExpanded = 'true';
 	}
 }

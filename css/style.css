@@ -24,15 +24,16 @@
 
 /* Header */
 header {
-	background-color: darkgray;
+	background-color: green;
 	text-align: right;
-	position: fixed;
-	height: 70px;
-	width: 100vw;
+	position: sticky;
+	top: 0px;
+	height: 75px;
 }
 
 .nav {
 	background-color: darkgray;
+	display: none;
 }
 .nav,
 .nav ul {
@@ -47,7 +48,11 @@ header {
 		flex-direction: row;
 	}
 	.nav {
+		display: flex;
 		justify-content: space-between;
+	}
+	#ham {
+		display: none;
 	}
 }
 
@@ -74,8 +79,4 @@ header {
 /* Contact */
 #contact {
 	background-color: teal;
-}
-
-.hide {
-	display: none;
 }
