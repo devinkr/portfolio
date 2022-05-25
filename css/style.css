@@ -4,12 +4,17 @@
 	font-size: 16px;
 }
 
-.wrapper {
+.wrapper,
+.nav {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.wrapper {
+	height: 100vh;
+	background-color: aliceblue;
+}
 /* Flex Styles */
 .flex {
 	display: flex;
@@ -39,9 +44,26 @@ header {
 }
 
 /* Main */
+#main {
+	background-color: cornsilk;
+}
 
 /* About */
+#about {
+	background-color: lightsalmon;
+}
 
 /* Resume */
+#resume {
+	background-color: peru;
+}
 
 /* Projects */
+#projects {
+	background-color: seagreen;
+}
+
+/* Contact */
+#contact {
+	background-color: teal;
+}
