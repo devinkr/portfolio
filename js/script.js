@@ -12,10 +12,12 @@ const projectInfoEl = document.querySelectorAll('.project-info div');
 
 /* Event Listeners */
 hamBtnEl.addEventListener('click', toggleHam);
-projectPrevEl.addEventListener('click', changeImage);
-projectNextEl.addEventListener('click', changeImage);
+projectPrevEl.addEventListener('click', changeProject);
+projectNextEl.addEventListener('click', changeProject);
 
 /* Functions */
+
+// Open and close the navigation links in the hamburger menu on mobile.
 function toggleHam() {
 	if (hamBtnEl.ariaExpanded === 'true') {
 		navEl.style = 'display: none';
@@ -26,17 +28,24 @@ function toggleHam() {
 	}
 }
 
-function changeImage(e) {
+// Change to previous or next project when next or previous buttons are clicked.
+function changeProject(e) {
 	previousProjectIndex = currentProjectIndex;
+	// If next button is clicked
 	if (e.target.classList.contains('next')) {
+		// If we reached the last project start over at beginning.
 		if (currentProjectIndex >= projectImagesEL.length - 1)
 			currentProjectIndex = 0;
 		else currentProjectIndex++;
-	} else if (e.target.classList.contains('prev')) {
+	}
+	// Else if the previous button is clicked
+	else if (e.target.classList.contains('prev')) {
+		// If already at beginning then go to last project in list.
 		if (currentProjectIndex <= 0)
 			currentProjectIndex = projectImagesEL.length - 1;
 		else currentProjectIndex--;
 	}
+	// Hide the previous project image and info and display the current one.
 	projectImagesEL[previousProjectIndex].style.display = 'none';
 	projectInfoEl[previousProjectIndex].style.display = 'none';
 	projectImagesEL[currentProjectIndex].style.display = 'block';
