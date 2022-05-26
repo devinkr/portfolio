@@ -37,19 +37,6 @@ a {
 	text-decoration: none;
 }
 
-button {
-	background: transparent;
-	border: 2px solid #f0ebd8;
-	color: #f0ebd8;
-	padding: 1em;
-	font-size: 1em;
-	border-radius: 5px;
-}
-
-button:hover {
-	background: #748cab;
-}
-
 .wrapper,
 .nav {
 	max-width: 1200px;
@@ -108,6 +95,20 @@ header {
 	background-color: #0d1321;
 	color: #f0ebd8;
 }
+
+#main button {
+	background: transparent;
+	border: 2px solid #f0ebd8;
+	color: #f0ebd8;
+	font-size: 1em;
+	border-radius: 5px;
+	padding: 1em;
+}
+
+#main button:hover {
+	background: #748cab;
+}
+
 .profile-image {
 	max-width: 70%;
 }
