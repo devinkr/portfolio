@@ -7,6 +7,7 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 18px;
 	line-height: 1.7;
+	color: #f0ebd8;
 }
 
 h1 {
@@ -25,10 +26,11 @@ a {
 
 button {
 	background: transparent;
-	border: 2px solid white;
-	color: white;
+	border: 2px solid #f0ebd8;
+	color: #f0ebd8;
 	padding: 1em;
 	font-size: 1em;
+	border-radius: 5px;
 }
 
 button:hover {
@@ -63,7 +65,7 @@ button:hover {
 
 /* Header */
 header {
-	background-color: #748cab;
+	background-color: #0d1321;
 	text-align: right;
 	position: sticky;
 	top: 0px;
@@ -72,6 +74,7 @@ header {
 .nav {
 	background-color: #748cab;
 	display: none;
+	height: 80px;
 }
 .nav,
 .nav ul {
@@ -97,7 +100,7 @@ header {
 
 /* Projects */
 #projects {
-	background-color: seagreen;
+	background-color: #748cab;
 }
 
 /* Contact */
@@ -113,6 +116,7 @@ header {
 	.nav {
 		display: flex;
 		justify-content: space-between;
+		background-color: #0d1321;
 	}
 	#ham {
 		display: none;
