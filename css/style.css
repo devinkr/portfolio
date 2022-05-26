@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -59,8 +59,16 @@ button:hover {
 .wrapper {
 	height: 100vh;
 	border: 1px solid red;
-	padding: 90px 2em;
+	padding: 0 20px;
 }
+
+#projects,
+#about,
+#resume,
+#contact {
+	padding-top: 90px;
+}
+
 /* Flex Styles */
 .flex {
 	display: flex;
@@ -99,6 +107,9 @@ header {
 	background-color: #1d2d44;
 	color: #f0ebd8;
 }
+.profile-image {
+	max-width: 70%;
+}
 
 /* About */
 #about {
@@ -115,10 +126,6 @@ header {
 	background-color: #748cab;
 }
 
-.project-info {
-	margin-right: auto;
-	margin-left: auto;
-}
 .project-container {
 	display: flex;
 	justify-content: space-around;
@@ -131,6 +138,19 @@ header {
 }
 
 .project-images img:first-of-type {
+	display: block;
+}
+
+.project-info {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.project-info div {
+	display: none;
+}
+
+.project-info div:first-of-type {
 	display: block;
 }
 
