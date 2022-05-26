@@ -1,3 +1,5 @@
+// TODO: When user clicks link in popup hamburger menu it should close menu.
+
 /* App's State (variables) */
 let currentProjectIndex = 0;
 let previousProjectIndex = 0;
