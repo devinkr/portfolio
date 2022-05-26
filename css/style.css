@@ -105,7 +105,7 @@ header {
 
 /* Main */
 #main {
-	background-color: #1d2d44;
+	background-color: #0d1321;
 	color: #f0ebd8;
 }
 .profile-image {
@@ -114,17 +114,17 @@ header {
 
 /* About */
 #about {
-	background-color: lightsalmon;
+	background-color: #3e5c76;
 }
 
 /* Resume */
 #resume {
-	background-color: peru;
+	background-color: #748cab;
 }
 
 /* Projects */
 #projects {
-	background-color: #748cab;
+	background-color: #1d2d44;
 }
 
 .project-container {
@@ -157,7 +157,8 @@ header {
 
 /* Contact */
 #contact {
-	background-color: teal;
+	background-color: #f0ebd8;
+	color: #0d1321;
 }
 
 @media screen and (min-width: 768px) {
