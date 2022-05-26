@@ -1,7 +1,38 @@
 /* Base & Utility Styles */
 * {
 	box-sizing: border-box;
-	font-size: 16px;
+}
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.7;
+}
+
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	background: transparent;
+	border: 2px solid white;
+	color: white;
+	padding: 1em;
+	font-size: 1em;
+}
+
+button:hover {
+	background: #748cab;
 }
 
 .wrapper,
@@ -13,52 +44,45 @@
 
 .wrapper {
 	height: 100vh;
-	background-color: aliceblue;
+	border: 1px solid red;
+	padding: 2em;
 }
 
 /* Flex Styles */
 .flex {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 1em;
+}
+
+.column {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 /* Header */
 header {
-	background-color: green;
+	background-color: #748cab;
 	text-align: right;
 	position: sticky;
 	top: 0px;
-	height: 75px;
 }
 
 .nav {
-	background-color: darkgray;
+	background-color: #748cab;
 	display: none;
 }
 .nav,
 .nav ul {
 	flex-direction: column;
 	align-items: center;
-	gap: 1em;
-}
-
-@media screen and (min-width: 768px) {
-	.nav,
-	.nav ul {
-		flex-direction: row;
-	}
-	.nav {
-		display: flex;
-		justify-content: space-between;
-	}
-	#ham {
-		display: none;
-	}
 }
 
 /* Main */
 #main {
-	background-color: cornsilk;
+	background-color: #1d2d44;
+	color: #f0ebd8;
 }
 
 /* About */
@@ -79,4 +103,21 @@ header {
 /* Contact */
 #contact {
 	background-color: teal;
+}
+
+@media screen and (min-width: 768px) {
+	.nav,
+	.nav ul {
+		flex-direction: row;
+	}
+	.nav {
+		display: flex;
+		justify-content: space-between;
+	}
+	#ham {
+		display: none;
+	}
+	#main {
+		font-size: 1.3em;
+	}
 }

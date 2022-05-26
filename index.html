@@ -4,6 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+			rel="stylesheet"
+		/>
 		<title>Devin Raleigh</title>
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/style.css" />
@@ -15,9 +21,23 @@
 	</head>
 	<body>
 		<section id="main">
-			<div class="wrapper">Main</div>
+			<div class="wrapper flex column">
+				<div class="img-wrapper">
+					<img
+						src="./assets/devinkr.png"
+						alt="Devin Raleigh kayaking on a lake."
+					/>
+				</div>
+				<h1>Devin Raleigh</h1>
+				<p>
+					I'm a full-stack web developer with a focus on backend based out of
+					Denver, Colorado
+				</p>
+				<button><a href="#projects">View my work</a></button>
+			</div>
 		</section>
 		<header>
+			<!-- Hamburger Menu SVG - https://css-tricks.com/snippets/svg/svg-hamburger-menu/ -->
 			<button id="ham" aria-expanded="false">
 				<svg viewBox="0 0 100 80" width="40" height="40">
 					<rect width="100" height="20"></rect>
