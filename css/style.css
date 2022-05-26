@@ -1,6 +1,7 @@
 /* Base & Utility Styles */
 * {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 body {
