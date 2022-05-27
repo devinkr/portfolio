@@ -1,9 +1,3 @@
-// TODO: When user clicks link in popup hamburger menu it should close menu. Click on Contact link opens contact modal
-// Mak left and right arrows scroll through projects?
-// Esc button closes any modals/navigation menus
-// Contact modal on mobile needs work to fit screen.
-// <button> on next, prev and close X
-
 /* App's State (variables) */
 let currentProjectIndex = 0;
 let previousProjectIndex = 0;
@@ -45,17 +39,22 @@ function toggleHam() {
 
 // Change to previous or next project when next or previous buttons are clicked.
 function changeProject(e) {
-	console.log(e.target);
 	previousProjectIndex = currentProjectIndex;
 	// If next button is clicked
-	if (e.target.classList.contains('next')) {
+	if (
+		e.target.classList.contains('next') ||
+		e.target.parentElement.classList.contains('next')
+	) {
 		// If we reached the last project start over at beginning.
 		if (currentProjectIndex >= projectImagesEL.length - 1)
 			currentProjectIndex = 0;
 		else currentProjectIndex++;
 	}
 	// Else if the previous button is clicked
-	else if (e.target.classList.contains('prev')) {
+	else if (
+		e.target.classList.contains('prev') ||
+		e.target.parentElement.classList.contains('prev')
+	) {
 		// If already at beginning then go to last project in list.
 		if (currentProjectIndex <= 0)
 			currentProjectIndex = projectImagesEL.length - 1;
