@@ -275,6 +275,7 @@ header {
 	background-color: #1d2d44;
 	padding: 2em;
 	border-radius: 4px;
+	height: calc(100vh-60px);
 }
 
 .close {
@@ -286,7 +287,7 @@ header {
 
 .modal-inner h2 {
 	color: #748cab;
-	font-size: 2em;
+	font-size: 1em;
 	text-align: center;
 }
 
