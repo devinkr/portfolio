@@ -212,22 +212,24 @@
 						><i class="fa-brands fa-instagram"></i
 					></a>
 				</div>
-				<form action="https://formspree.io/f/xeqnnzez" method="POST">
-					<div class="row">
+				<form
+					id="contact-form"
+					action="https://formspree.io/f/xeqnnzez"
+					method="POST"
+				>
+					<div>
 						<label for="name">Name:</label>
 						<input id="name" type="text" name="name" required />
 					</div>
-					<div class="row">
+					<div>
 						<label for="email">Email:</label>
 						<input id="email" type="email" name="email" required />
 					</div>
-					<div class="row">
+					<div>
 						<label for="message">Message:</label>
-						<textarea id="message" rows="6" cols="40" name="message"></textarea>
+						<textarea id="message" rows="10" name="message"></textarea>
 					</div>
-					<div class="form-button">
-						<button type="submit" class="btn">Send</button>
-					</div>
+					<button type="submit" class="btn">Send</button>
 				</form>
 			</div>
 		</section>

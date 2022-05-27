@@ -4,7 +4,6 @@
 // Contact modal on mobile needs work to fit screen.
 // <button> on next, prev and close X
 
-
 /* App's State (variables) */
 let currentProjectIndex = 0;
 let previousProjectIndex = 0;
@@ -26,6 +25,8 @@ projectPrevEl.addEventListener('click', changeProject);
 projectNextEl.addEventListener('click', changeProject);
 contactBtnEl.addEventListener('click', toggleContactModal);
 closeBtnEl.addEventListener('click', toggleContactModal);
+document.body.addEventListener('keydown', closeModals);
+navEl.addEventListener('click', closeModals);
 
 /* Functions */
 
@@ -66,6 +67,19 @@ function changeProject(e) {
 }
 
 function toggleContactModal() {
-	console.log('Made it this far');
 	contactModalEl.classList.toggle('hide');
+}
+
+function closeModals(event) {
+	if (event.keyCode === 27) {
+		if (hamBtnEl.ariaExpanded === 'true') {
+			navEl.style = 'display: none';
+			hamBtnEl.ariaExpanded = 'false';
+		}
+		if (contactModalEl.classList.contains('hide') === false) {
+			toggleContactModal();
+		}
+	} else if (event.target.tagName === 'A') {
+		toggleHam();
+	}
 }

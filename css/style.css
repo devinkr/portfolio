@@ -267,25 +267,6 @@ header {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.row {
-	display: flex;
-	gap: 2em;
-	margin: 1em 0;
-}
-.row label {
-	flex-basis: 50%;
-}
-
-.row input,
-.row textarea {
-	flex-basis: 50%;
-	padding: 10px;
-}
-
-.row textarea {
-	width: 100%;
-}
-
 .modal-inner {
 	display: flex;
 	flex-direction: column;
@@ -305,13 +286,23 @@ header {
 
 .modal-inner h2 {
 	color: #748cab;
-	font-size: 3em;
+	font-size: 2em;
 	text-align: center;
+}
+
+#contact-form div {
+	margin: 0.5em;
+}
+
+#contact-form input,
+#contact-form textarea {
+	width: 100%;
+	padding: 5px;
 }
 
 .contact-social {
 	text-align: center;
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .contact-social i {
