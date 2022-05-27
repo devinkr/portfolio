@@ -81,6 +81,9 @@ function closeModals(event) {
 			toggleContactModal();
 		}
 	} else if (event.target.tagName === 'A') {
-		toggleHam();
+		if (hamBtnEl.ariaExpanded === 'true') {
+			navEl.style = 'display: none';
+			hamBtnEl.ariaExpanded = 'false';
+		}
 	}
 }
