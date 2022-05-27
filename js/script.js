@@ -7,8 +7,8 @@ let previousProjectIndex = 0;
 /* Cached elements */
 const hamBtnEl = document.querySelector('#ham');
 const navEl = document.querySelector('.nav');
-const projectPrevEl = document.querySelector('#projects .prev');
-const projectNextEl = document.querySelector('#projects .next');
+const projectPrevEl = document.querySelector('.prev');
+const projectNextEl = document.querySelector('.next');
 const projectImagesEL = document.querySelectorAll('.projects');
 const projectInfoEl = document.querySelectorAll('.project-info div');
 
@@ -32,6 +32,7 @@ function toggleHam() {
 
 // Change to previous or next project when next or previous buttons are clicked.
 function changeProject(e) {
+	console.log(e.target);
 	previousProjectIndex = currentProjectIndex;
 	// If next button is clicked
 	if (e.target.classList.contains('next')) {
