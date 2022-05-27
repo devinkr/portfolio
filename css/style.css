@@ -6,14 +6,13 @@
 
 body {
 	font-family: 'Noto Sans', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.7;
 	color: #f0ebd8;
 }
 
 h1 {
-	font-size: 2em;
-	text-align: center;
+	font-size: 1.8em;
 }
 
 h2 {
@@ -52,17 +51,18 @@ a {
 	gap: 1em;
 	min-height: 100vh;
 	flex-grow: 1;
+	padding: 0 20px;
+}
+
+.devin {
+	color: #748cab;
 }
 
 #projects,
 #about,
 #resume,
 #contact {
-	padding-top: 70px;
-}
-
-.half {
-	width: 45%;
+	padding-top: 0px;
 }
 
 /* Flex Styles */
@@ -95,7 +95,7 @@ header {
 	color: #f0ebd8;
 }
 
-#main button {
+.btn {
 	background: transparent;
 	border: 2px solid #f0ebd8;
 	color: #f0ebd8;
@@ -115,6 +115,14 @@ header {
 /* About */
 #about {
 	background-color: #3e5c76;
+	font-size: 1em;
+}
+#about .wrapper {
+	padding-top: 40px;
+}
+
+.about-img {
+	width: 80%;
 }
 
 /* Resume */
@@ -160,6 +168,9 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+	body {
+		font-size: 20px;
+	}
 	.nav,
 	.nav ul {
 		display: flex;
@@ -179,6 +190,7 @@ header {
 	}
 	#main .wrapper {
 		flex-direction: column;
+		gap: 3em;
 	}
 	h2 {
 		font-size: 2em;
@@ -193,7 +205,8 @@ header {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-	.about-div {
-		flex-basis: 40%;
+	.about-div,
+	.about-img {
+		flex-basis: 45%;
 	}
 }
