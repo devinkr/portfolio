@@ -21,18 +21,20 @@
 	</head>
 	<body>
 		<section id="main">
-			<div class="wrapper flex column">
+			<div class="wrapper">
 				<div class="profile-image">
 					<img
 						src="./assets/devinkr.png"
 						alt="Devin Raleigh kayaking on a lake."
 					/>
 				</div>
-				<h1>Devin Raleigh</h1>
-				<p>
-					I'm a full-stack web developer with a focus on backend based out of
-					Denver, Colorado
-				</p>
+				<div>
+					<h1>Devin Raleigh</h1>
+					<p>
+						I'm a full-stack web developer with a focus on backend based out of
+						Denver, Colorado
+					</p>
+				</div>
 				<a href="#projects"><button>View my work</button></a>
 			</div>
 		</section>
@@ -45,9 +47,9 @@
 					<rect y="60" width="100" height="20"></rect>
 				</svg>
 			</button>
-			<div class="nav flex">
+			<div class="nav">
 				<nav aria-label="Main Navigation" role="navigation">
-					<ul class="flex">
+					<ul>
 						<li><a href="#main">Home</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#about">About</a></li>
@@ -56,7 +58,7 @@
 					</ul>
 				</nav>
 				<nav aria-label="Social Navigation" role="navigation">
-					<ul class="flex social">
+					<ul class="social">
 						<li>
 							<a href="https://github.com/devinkr" target="_blank"
 								><img src="./assets/GitHub-Mark-Light-64px.png" alt="GitHub"
@@ -73,32 +75,32 @@
 		</header>
 		<section id="projects">
 			<div class="wrapper">
-				<h2>Projects</h2>
-				<div class="project-container">
+				<div class="button-wrapper">
 					<div class="project-button prev">P</div>
-					<div class="project-images">
-						<img
-							class="projects"
-							src="./assets/dkrim.jpg"
-							alt="Screenshot of DKR.IM website"
-						/>
-						<img
-							class="projects"
-							src="./assets/jelloplanet.jpg"
-							alt="Screenshot of Jelloplanet.com website"
-						/>
-						<img
-							class="projects"
-							src="./assets/reef.jpg"
-							alt="Screenshot of ReefStoreBonaire.com website"
-						/>
-						<img
-							class="projects"
-							src="./assets/oceanreef.jpg"
-							alt="Screenshot of Ocean Reef website"
-						/>
-					</div>
 					<div class="project-button next">N</div>
+				</div>
+
+				<div class="project-images">
+					<img
+						class="projects"
+						src="./assets/dkrim.jpg"
+						alt="Screenshot of DKR.IM website"
+					/>
+					<img
+						class="projects"
+						src="./assets/jelloplanet.jpg"
+						alt="Screenshot of Jelloplanet.com website"
+					/>
+					<img
+						class="projects"
+						src="./assets/reef.jpg"
+						alt="Screenshot of ReefStoreBonaire.com website"
+					/>
+					<img
+						class="projects"
+						src="./assets/oceanreef.jpg"
+						alt="Screenshot of Ocean Reef website"
+					/>
 				</div>
 				<div class="project-info">
 					<div>
@@ -138,14 +140,14 @@
 			</div>
 		</section>
 		<section id="about">
-			<div class="wrapper row">
-				<div>
+			<div class="wrapper column">
+				<div class="about-div">
 					<img
 						src="./assets/devin-about.jpg"
 						alt="Devin Raleigh holding a Belgian Malinois puppy"
 					/>
 				</div>
-				<div>
+				<div class="about-div">
 					<h3>Who am I?</h3>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
