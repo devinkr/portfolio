@@ -17,7 +17,7 @@ h1 {
 
 h2 {
 	font-size: 1.5em;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
 }
 
 h3 {
@@ -228,4 +228,74 @@ header {
 	.about-img {
 		flex-basis: 45%;
 	}
+}
+
+/* Modal Styles */
+
+.hide {
+	display: none;
+}
+
+.modal-container {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.row {
+	display: flex;
+	gap: 2em;
+	margin: 1em 0;
+}
+.row label {
+	flex-basis: 50%;
+}
+
+.row input,
+.row textarea {
+	flex-basis: 50%;
+	padding: 10px;
+}
+
+.row textarea {
+	width: 100%;
+}
+
+.modal-inner {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	margin: 2em;
+	background-color: #1d2d44;
+	padding: 2em;
+	border-radius: 4px;
+}
+
+.modal-inner h2 {
+	color: #748cab;
+	font-size: 3em;
+	text-align: center;
+}
+
+.contact-social {
+	text-align: center;
+	font-size: 3em;
+}
+
+.contact-social i {
+	margin: 0 0.3em;
+}
+
+.contact-social i:hover {
+	color: #748cab;
+}
+
+.form-button {
+	text-align: right;
 }

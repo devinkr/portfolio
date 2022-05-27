@@ -11,11 +11,14 @@ const projectPrevEl = document.querySelector('.prev');
 const projectNextEl = document.querySelector('.next');
 const projectImagesEL = document.querySelectorAll('.projects');
 const projectInfoEl = document.querySelectorAll('.project-info div');
+const contactModalEl = document.querySelector('.modal-contact');
+const contactBtnEl = document.querySelector('.contact');
 
 /* Event Listeners */
 hamBtnEl.addEventListener('click', toggleHam);
 projectPrevEl.addEventListener('click', changeProject);
 projectNextEl.addEventListener('click', changeProject);
+contactBtnEl.addEventListener('click', showContactModal);
 
 /* Functions */
 
@@ -53,4 +56,9 @@ function changeProject(e) {
 	projectInfoEl[previousProjectIndex].style.display = 'none';
 	projectImagesEL[currentProjectIndex].style.display = 'block';
 	projectInfoEl[currentProjectIndex].style.display = 'block';
+}
+
+function showContactModal() {
+	console.log('I made it this far');
+	contactModalEl.classList.remove('hide');
 }

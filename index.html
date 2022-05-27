@@ -166,9 +166,42 @@
 						non nisi est sit amet facilisis magna.
 					</p>
 				</div>
-				<button class="btn">Contact Me</button>
+				<button class="btn contact">Contact Me</button>
 			</div>
 		</section>
 		<section id="resume"><div class="wrapper">Resume</div></section>
+		<section class="modal-container modal-contact hide">
+			<div class="modal-inner">
+				<h2>Let's get in touch!</h2>
+				<div class="contact-social">
+					<a href="https://www.linkedin.com/in/devinkr/" target="_blank"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+					<a href="https://github.com/devinkr" target="_blank"
+						><i class="fa-brands fa-github"></i
+					></a>
+					<a href="https://www.instagram.com/devinkr/" target="_blank"
+						><i class="fa-brands fa-instagram"></i
+					></a>
+				</div>
+				<form action="https://formspree.io/f/xeqnnzez" method="POST">
+					<div class="row">
+						<label for="name">Name:</label>
+						<input id="name" type="text" name="name" required />
+					</div>
+					<div class="row">
+						<label for="email">Email:</label>
+						<input id="email" type="email" name="email" required />
+					</div>
+					<div class="row">
+						<label for="message">Message:</label>
+						<textarea id="message" rows="6" cols="40" name="message"></textarea>
+					</div>
+					<div class="form-button">
+						<button type="submit" class="btn">Send</button>
+					</div>
+				</form>
+			</div>
+		</section>
 	</body>
 </html>
