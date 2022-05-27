@@ -35,6 +35,11 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color: #748cab;
+	text-decoration: underline;
+}
+
 button {
 	background-color: transparent;
 	border: none;
@@ -78,22 +83,32 @@ header {
 	text-align: right;
 	position: sticky;
 	top: 0px;
+	font-size: 1em;
 }
 
+#ham {
+	font-size: 2em;
+}
 .nav {
 	background-color: #0d1321;
 	display: none;
+	font-size: 2em;
 }
 .nav,
 .nav ul {
 	flex-direction: column;
 	align-items: center;
 }
-
-.social img {
-	margin-top: 10px;
-	width: 50px;
+.main-nav li {
+	border-top: 1px solid #f0ebd8;
+	border-bottom: 1px solid #f0ebd8;
 }
+
+.social li {
+	display: inline-block;
+	margin: 0.6em;
+}
+
 /* Main */
 #main {
 	background-color: #0d1321;
@@ -123,7 +138,7 @@ header {
 	font-size: 1em;
 }
 #about .wrapper {
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
 .about-img {
@@ -141,7 +156,7 @@ header {
 }
 
 #projects .wrapper {
-	padding-top: 40px;
+	padding-top: 60px;
 	flex-direction: column;
 	justify-content: flex-start;
 }
@@ -201,7 +216,15 @@ header {
 	.nav {
 		justify-content: space-between;
 		background-color: #0d1321;
-		padding: 0 1em;
+		padding: 0.5em 1em;
+		font-size: 1em;
+	}
+	.main-nav li {
+		border: none;
+	}
+	.social li {
+		display: block;
+		margin: 0;
 	}
 	#ham {
 		display: none;
