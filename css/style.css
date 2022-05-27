@@ -232,10 +232,6 @@ header {
 
 /* Modal Styles */
 
-.hide {
-	display: none;
-}
-
 .modal-container {
 	position: fixed;
 	display: flex;
@@ -277,6 +273,13 @@ header {
 	border-radius: 4px;
 }
 
+.close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	font-size: 1.5em;
+}
+
 .modal-inner h2 {
 	color: #748cab;
 	font-size: 3em;
@@ -292,10 +295,15 @@ header {
 	margin: 0 0.3em;
 }
 
-.contact-social i:hover {
+.contact-social i:hover,
+.close:hover {
 	color: #748cab;
 }
 
 .form-button {
 	text-align: right;
+}
+
+.hide {
+	display: none;
 }
