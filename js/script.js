@@ -1,4 +1,9 @@
-// TODO: When user clicks link in popup hamburger menu it should close menu.
+// TODO: When user clicks link in popup hamburger menu it should close menu. Click on Contact link opens contact modal
+// Mak left and right arrows scroll through projects?
+// Esc button closes any modals/navigation menus
+// Contact modal on mobile needs work to fit screen.
+// <button> on next, prev and close X
+
 
 /* App's State (variables) */
 let currentProjectIndex = 0;

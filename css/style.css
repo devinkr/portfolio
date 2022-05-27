@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 }
 
 h2 {
@@ -234,7 +234,7 @@ header {
 	}
 	#main .wrapper {
 		flex-direction: column;
-		gap: 3em;
+		gap: 1em;
 	}
 	h2 {
 		font-size: 2em;
