@@ -18,6 +18,7 @@ const projectInfoEl = document.querySelectorAll('.project-info div');
 const contactModalEl = document.querySelector('.modal-contact');
 const contactBtnEl = document.querySelector('.contact');
 const closeBtnEl = document.querySelector('.close');
+const navContactEl = document.querySelector('#nav-contact');
 
 /* Event Listeners */
 hamBtnEl.addEventListener('click', toggleHam);
@@ -27,6 +28,7 @@ contactBtnEl.addEventListener('click', toggleContactModal);
 closeBtnEl.addEventListener('click', toggleContactModal);
 document.body.addEventListener('keydown', closeModals);
 navEl.addEventListener('click', closeModals);
+navContactEl.addEventListener('click', toggleContactModal);
 
 /* Functions */
 
