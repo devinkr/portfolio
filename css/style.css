@@ -26,6 +26,10 @@ h3 {
 	text-align: center;
 }
 
+p {
+	margin-bottom: 1em;
+}
+
 em {
 	font-weight: 600;
 }
@@ -172,7 +176,6 @@ footer {
 
 #resume p {
 	font-size: 0.8em;
-	margin-bottom: 1em;
 }
 
 ul.inline {
