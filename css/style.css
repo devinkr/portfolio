@@ -309,7 +309,6 @@ ul.inline li {
 	background-color: #1d2d44;
 	padding: 2em;
 	border-radius: 4px;
-	height: calc(100vh-60px);
 }
 
 .close {
