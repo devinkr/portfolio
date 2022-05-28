@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5em;
+	font-size: 1em;
 	margin-bottom: 0.5em;
 }
 
@@ -24,6 +24,10 @@ h3 {
 	font-size: 1.3em;
 	margin-bottom: 0.5em;
 	text-align: center;
+}
+
+em {
+	font-weight: 600;
 }
 
 img {
@@ -109,6 +113,11 @@ header {
 	margin: 0.6em;
 }
 
+footer {
+	background-color: #0d1321;
+	padding: 1.3em;
+}
+
 /* Main */
 #main {
 	background-color: #0d1321;
@@ -148,6 +157,31 @@ header {
 /* Resume */
 #resume {
 	background-color: #748cab;
+	padding-top: 50px;
+}
+
+#resume .wrapper {
+	align-items: flex-start;
+}
+
+#resume h3 {
+	width: 100%;
+	text-align: left;
+	border-bottom: 1px solid #f0ebd8;
+}
+
+#resume p {
+	font-size: 0.8em;
+	margin-bottom: 1em;
+}
+
+ul.inline {
+	list-style: circle;
+}
+
+ul.inline li {
+	font-size: 0.8em;
+	display: inline;
 }
 
 /* Projects */
@@ -236,9 +270,6 @@ header {
 		flex-direction: column;
 		gap: 1em;
 	}
-	h2 {
-		font-size: 2em;
-	}
 	.project-info {
 		width: 70%;
 	}
@@ -321,4 +352,13 @@ header {
 
 .hide {
 	display: none;
+}
+
+.sr-only {
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
