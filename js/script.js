@@ -69,10 +69,12 @@ function changeProject(e) {
 	projectInfoEl[currentProjectIndex].style.display = 'block';
 }
 
+// Show/hide the contact modal
 function toggleContactModal() {
 	contactModalEl.classList.toggle('hide');
 }
 
+// Close the all modals when esc is pressed and close nav modal when a link is clicked.
 function closeModals(event) {
 	if (event.keyCode === 27) {
 		if (hamBtnEl.ariaExpanded === 'true') {
@@ -90,6 +92,7 @@ function closeModals(event) {
 	}
 }
 
+// Change the theme between dark and light. Defaults to dark.
 function setTheme() {
 	if (document.documentElement.className === 'theme-dark') {
 		document.documentElement.className = 'theme-light';
@@ -98,4 +101,5 @@ function setTheme() {
 	}
 }
 
+// Set dark theme initially.
 setTheme();
