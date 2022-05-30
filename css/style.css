@@ -108,6 +108,7 @@ header {
 	position: sticky;
 	top: 0px;
 	font-size: 1em;
+	color: var(--font-color);
 }
 
 #ham {
@@ -122,6 +123,7 @@ header {
 .nav ul {
 	flex-direction: column;
 	align-items: center;
+	gap: 1em;
 }
 .main-nav li {
 	border-top: 1px solid var(--font-color);
@@ -129,7 +131,7 @@ header {
 }
 
 .theme-switcher {
-	font-size: 2em;
+	font-size: 1em;
 }
 .theme-switcher:hover {
 	color: var(--color4);
@@ -284,6 +286,10 @@ footer {
 		padding: 0.5em 1em;
 		font-size: 1em;
 	}
+	.theme-switcher {
+		font-size: 1.7em;
+	}
+
 	.main-nav li {
 		border: none;
 	}
@@ -392,4 +398,46 @@ footer {
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
+}
+
+/* Theme Toggle */
+
+.toggle input[type='checkbox'] {
+	display: none;
+}
+
+.toggle label {
+	background-color: #777;
+	border: 2px solid #555;
+	border-radius: 30px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: all ease-in-out 0.3s;
+	width: 70px;
+	height: 30px;
+}
+
+.toggle label::after {
+	background-color: #555;
+	border-radius: 50%;
+	content: ' ';
+	cursor: pointer;
+	display: inline-block;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+	transition: all ease-in-out 0.3s;
+	width: 22px;
+	height: 22px;
+}
+
+.toggle input[type='checkbox']:checked ~ label {
+	background-color: var(--color4);
+	border-color: var(--color3);
+}
+
+.toggle input[type='checkbox']:checked ~ label::after {
+	background-color: var(--color2);
+	transform: translateX(36px);
 }
