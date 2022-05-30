@@ -1,6 +1,7 @@
 /* App's State (variables) */
 let currentProjectIndex = 0;
 let previousProjectIndex = 0;
+const theme = 'theme-dark';
 
 /* Cached elements */
 const hamBtnEl = document.querySelector('#ham');
@@ -13,6 +14,8 @@ const contactModalEl = document.querySelector('.modal-contact');
 const contactBtnEl = document.querySelector('.contact');
 const closeBtnEl = document.querySelector('.close');
 const navContactEl = document.querySelector('#nav-contact');
+const lightBtn = document.querySelector('.fa-sun');
+const darkBtn = document.querySelector('.fa-moon');
 
 /* Event Listeners */
 hamBtnEl.addEventListener('click', toggleHam);
@@ -23,6 +26,12 @@ closeBtnEl.addEventListener('click', toggleContactModal);
 document.body.addEventListener('keydown', closeModals);
 navEl.addEventListener('click', closeModals);
 navContactEl.addEventListener('click', toggleContactModal);
+lightBtn.addEventListener('click', () => {
+	setTheme('theme-light');
+});
+darkBtn.addEventListener('click', () => {
+	setTheme('theme-dark');
+});
 
 /* Functions */
 
@@ -87,3 +96,9 @@ function closeModals(event) {
 		}
 	}
 }
+
+function setTheme(themeName) {
+	document.documentElement.className = themeName;
+}
+
+setTheme(theme);

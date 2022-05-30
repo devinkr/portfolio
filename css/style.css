@@ -8,7 +8,22 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 16px;
 	line-height: 1.7;
-	color: #f0ebd8;
+}
+
+.theme-dark {
+	--font-color: #f0ebd8;
+	--color1: #0d1321;
+	--color2: #1d2d44;
+	--color3: #3e5c76;
+	--color4: #748cab;
+}
+
+.theme-light {
+	--font-color: #1f1300;
+	--color1: #aec3b0;
+	--color2: #eff6e0;
+	--color3: #efa48b;
+	--color4: #3a606e;
 }
 
 h1 {
@@ -44,7 +59,7 @@ a {
 }
 
 a:hover {
-	color: #748cab;
+	color: var(--color4);
 	text-decoration: underline;
 }
 
@@ -60,6 +75,7 @@ button {
 	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
+	color: var(--font-color);
 }
 
 .wrapper {
@@ -73,7 +89,7 @@ button {
 }
 
 .devin {
-	color: #748cab;
+	color: var(--color4);
 }
 
 #projects,
@@ -87,7 +103,7 @@ button {
 
 /* Header */
 header {
-	background-color: #0d1321;
+	background-color: var(--color1);
 	text-align: right;
 	position: sticky;
 	top: 0px;
@@ -98,7 +114,7 @@ header {
 	font-size: 2em;
 }
 .nav {
-	background-color: #0d1321;
+	background-color: var(--color1);
 	display: none;
 	font-size: 2em;
 }
@@ -108,8 +124,15 @@ header {
 	align-items: center;
 }
 .main-nav li {
-	border-top: 1px solid #f0ebd8;
-	border-bottom: 1px solid #f0ebd8;
+	border-top: 1px solid var(--font-color);
+	border-bottom: 1px solid var(--font-color);
+}
+
+.theme-switcher {
+	font-size: 2em;
+}
+.theme-switcher:hover {
+	color: var(--color4);
 }
 
 .social li {
@@ -118,27 +141,34 @@ header {
 }
 
 footer {
-	background-color: #0d1321;
+	background-color: var(--color1);
 	padding: 1.3em;
 }
 
 /* Main */
 #main {
-	background-color: #0d1321;
-	color: #f0ebd8;
+	background-color: var(--color1);
+	color: var(--font-color);
 }
 
 .btn {
 	background: transparent;
-	border: 2px solid #f0ebd8;
-	color: #f0ebd8;
+	border: 2px solid var(--font-color);
+	color: var(--font-color);
 	font-size: 1em;
 	border-radius: 5px;
 	padding: 1em;
 }
 
 .btn:hover {
-	background: #748cab;
+	background: var(--color4);
+	color: var(--font-color);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn a:hover {
+	text-decoration: none;
 }
 
 .profile-image {
@@ -147,7 +177,7 @@ footer {
 
 /* About */
 #about {
-	background-color: #3e5c76;
+	background-color: var(--color3);
 	font-size: 1em;
 }
 #about .wrapper {
@@ -160,7 +190,7 @@ footer {
 
 /* Resume */
 #resume {
-	background-color: #748cab;
+	background-color: var(--color4);
 	padding-top: 50px;
 }
 
@@ -171,7 +201,7 @@ footer {
 #resume h3 {
 	width: 100%;
 	text-align: left;
-	border-bottom: 1px solid #f0ebd8;
+	border-bottom: 1px solid var(--font-color);
 }
 
 #resume p {
@@ -189,7 +219,7 @@ ul.inline li {
 
 /* Projects */
 #projects {
-	background-color: #1d2d44;
+	background-color: var(--color2);
 }
 
 #projects .wrapper {
@@ -209,7 +239,7 @@ ul.inline li {
 }
 
 .project-button:hover {
-	color: #748cab;
+	color: var(--color4);
 }
 
 .project-images img {
@@ -234,10 +264,8 @@ ul.inline li {
 	display: block;
 }
 
-/* Contact */
-#contact {
-	background-color: #f0ebd8;
-	color: #0d1321;
+footer {
+	color: var(--font-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -252,7 +280,7 @@ ul.inline li {
 	}
 	.nav {
 		justify-content: space-between;
-		background-color: #0d1321;
+		background-color: var(--color1);
 		padding: 0.5em 1em;
 		font-size: 1em;
 	}
@@ -306,9 +334,10 @@ ul.inline li {
 	flex-direction: column;
 	position: absolute;
 	margin: 2em;
-	background-color: #1d2d44;
+	background-color: var(--color2);
 	padding: 2em;
 	border-radius: 4px;
+	color: var(--font-color);
 }
 
 .close {
@@ -319,7 +348,7 @@ ul.inline li {
 }
 
 .modal-inner h2 {
-	color: #748cab;
+	color: var(--color4);
 	font-size: 1em;
 	text-align: center;
 }
@@ -345,7 +374,7 @@ ul.inline li {
 
 .contact-social i:hover,
 .close:hover {
-	color: #748cab;
+	color: var(--color4);
 }
 
 .form-button {
