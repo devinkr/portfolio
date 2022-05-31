@@ -279,7 +279,7 @@ footer {
 	.nav {
 		justify-content: space-between;
 		background-color: var(--color1);
-		padding: 0.5em 1em;
+		padding: 0.2em 1em;
 		font-size: 1em;
 	}
 	.theme-switcher {
@@ -292,6 +292,7 @@ footer {
 	.social li {
 		display: block;
 		margin: 0;
+		font-size: 1.3em;
 	}
 	#ham {
 		display: none;
