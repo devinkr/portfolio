@@ -216,6 +216,9 @@ ul.inline li {
 }
 
 /* Projects */
+
+/* Used https://github.com/SEIR-59/corgi-carousel as reference*/
+
 #projects {
 	background-color: var(--color2);
 }
@@ -239,6 +242,9 @@ ul.inline li {
 .project-button:hover {
 	color: var(--color4);
 }
+
+/* https://getcssscan.com/css-box-shadow-examples */
+/* https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable */
 
 .project-images img {
 	width: 100%;
@@ -321,6 +327,8 @@ footer {
 }
 
 /* Modal Styles */
+
+/* Based on modal built with Esin working on Tamagotchi game */
 
 .modal-container {
 	position: fixed;
@@ -406,6 +414,7 @@ footer {
 }
 
 /* Theme Toggle */
+/* https://codepen.io/FlorinPop17/pen/ZNqKVM?editors=1100 */
 
 .toggle input[type='checkbox'] {
 	display: none;
