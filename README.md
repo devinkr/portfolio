@@ -29,3 +29,11 @@ The biggest hurdle in this project was the styling. I have never tried to do a m
 The contact modal especially was diffuclt to style and make it look ok and function on very small screens.
 
 My other major hurdle with this project was just design in general. I am not a designer and am much more comortable in the code. Before any attempt at styling just thinking of a design that would look good was very challenging.
+
+## Resources
+-https://favicon.io/favicon-converter/ to turn the icon I designed into favicons
+-https://github.com/SEIR-59/corgi-carousel for help making project carousel
+-https://codepen.io/haxzie/pen/xxKNEGM ideas for how to do dark/light theme switcher.
+-https://codepen.io/FlorinPop17/pen/ZNqKVM?editors=1100 How to make a CSS toggle
+-https://stackoverflow.com/questions/40010597/how-do-i-apply-opacity-to-a-css-color-variable Used to apply opacity to css variable to make the boxshadow work with light/dark mode switcher
+
