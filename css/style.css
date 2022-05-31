@@ -63,6 +63,7 @@ a {
 a:hover {
 	color: var(--color4);
 	text-decoration: underline;
+	transition: all 0.5s;
 }
 
 button {
@@ -161,6 +162,7 @@ footer {
 	color: var(--font-color);
 	text-decoration: none;
 	cursor: pointer;
+	transition: all 0.5s;
 }
 
 .btn a:hover {
@@ -330,6 +332,7 @@ footer {
 	bottom: 0;
 	right: 0;
 	background-color: rgba(0, 0, 0, 0.8);
+	transition: opacity 0.5s ease-in;
 }
 
 .modal-inner {
@@ -341,6 +344,7 @@ footer {
 	padding: 2em;
 	border-radius: 4px;
 	color: var(--font-color);
+	transition: opacity 0.5s ease-in;
 }
 
 .close {
@@ -385,7 +389,11 @@ footer {
 }
 
 .hide {
-	display: none;
+	/* display: none; */
+	width: 0px;
+	height: 0px;
+	opacity: 0;
+	left: -100px;
 }
 
 .sr-only {
