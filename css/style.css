@@ -16,6 +16,7 @@ body {
 	--color2: #1d2d44;
 	--color3: #3e5c76;
 	--color4: #748cab;
+	--shadow: 240, 235, 216;
 }
 
 .theme-light {
@@ -24,6 +25,7 @@ body {
 	--color2: #aec3b0;
 	--color3: #efa48b;
 	--color4: #79bed8;
+	--shadow: 31, 19, 0;
 }
 
 h1 {
@@ -92,15 +94,6 @@ button {
 	color: var(--color4);
 }
 
-#projects,
-#about,
-#resume,
-#contact {
-	padding-top: 0px;
-}
-
-/* Flex Styles */
-
 /* Header */
 header {
 	background-color: var(--color1);
@@ -114,6 +107,7 @@ header {
 #ham {
 	font-size: 2em;
 }
+
 .nav {
 	background-color: var(--color1);
 	display: none;
@@ -247,6 +241,8 @@ ul.inline li {
 .project-images img {
 	width: 100%;
 	display: none;
+	box-shadow: rgba(var(--shadow), 0.35) 0px 5px 15px;
+	border-radius: 20px;
 }
 
 .project-images img:first-of-type {
