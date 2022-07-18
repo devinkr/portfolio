@@ -6,8 +6,6 @@
 	forms.forEach(function (e) {
 		e.addEventListener('submit', function (event) {
 			event.preventDefault();
-			console.log('Submit');
-
 			let thisForm = this;
 
 			//let action = thisForm.getAttribute('action');
@@ -58,9 +56,9 @@
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then((response) => {
-				thisForm.querySelector('.loading').classList.remove('d-block');
 				if (response.status === 200) {
 					thisForm.querySelector('.sent-message').classList.add('d-block');
+					thisForm.querySelector('.loading').classList.remove('d-block');
 					thisForm.reset();
 				} else {
 					throw new Error(
