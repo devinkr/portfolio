@@ -1,365 +1,780 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+		<title>Devin Raleigh | Full Stack Developer</title>
+		<meta
+			content="I'm an outdoor loving, adventure seeking full stack developer based in Denver with a background in education/training, tourism, customer service, management, and linguistics."
+			name="description"
+		/>
+		<meta
+			content="devin raleigh, full stack developer, mern stack developer, web developer, software engineer"
+			name="keywords"
+		/>
+
+		<!-- Favicons -->
+		<link href="assets/img/favicon.ico" rel="icon" />
+		<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+		<!-- Google Fonts -->
 		<link
-			href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
 			rel="stylesheet"
 		/>
-		<title>Devin Raleigh</title>
-		<script
-			src="https://kit.fontawesome.com/11c58b208f.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="./css/reset.css" />
-		<link rel="stylesheet" href="./css/style.css" />
-		<script src="./js/script.js" defer></script>
-		<!-- https://favicon.io/favicon-converter/ -->
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
-	</head>
-	<body>
-		<section id="main">
-			<div class="wrapper">
-				<div class="profile-image">
-					<img
-						src="./assets/devinkr.png"
-						alt="Devin Raleigh kayaking on a lake."
-					/>
-				</div>
-				<div>
-					<h1>
-						I am <span class="devin">Devin Raleigh</span>. A full stack web
-						developer with a focus on backend APIs.
-					</h1>
-				</div>
-				<a class="btn" href="#projects">View my work</a>
-			</div>
-		</section>
-		<header>
-			<button id="ham" aria-expanded="false">
-				<i class="fa-solid fa-bars"></i>
-			</button>
-			<div class="nav">
-				<nav aria-label="Main Navigation" role="navigation">
-					<ul class="main-nav">
-						<li><a href="#main">Home</a></li>
-						<li><a href="#projects">Projects</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#contact" id="nav-contact">Contact</a></li>
-					</ul>
-				</nav>
-				<div class="toggle">
-					<i class="fa-solid fa-moon theme-switcher"></i>
-					<input type="checkbox" id="toggle" />
-					<label for="toggle"></label>
-					<i class="fa-solid fa-sun theme-switcher"></i>
-				</div>
-				<nav aria-label="Social Navigation" role="navigation">
-					<ul class="social">
-						<li>
-							<a
-								href="https://github.com/devinkr"
-								title="My Github"
-								target="_blank"
-								><i class="fa-brands fa-github"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://www.linkedin.com/in/devinkr/"
-								title="My LinkedIn"
-								target="_blank"
-								><i class="fa-brands fa-linkedin"></i
-							></a>
-						</li>
-						<li>
-							<a
-								href="https://www.instagram.com/devinkr/"
-								title="My Instagram"
-								target="_blank"
-								><i class="fa-brands fa-instagram"></i
-							></a>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<section id="projects">
-			<h2 class="sr-only">Projects</h2>
-			<div class="wrapper">
-				<div class="button-wrapper">
-					<button class="project-button prev">
-						<span
-							class="fa-regular fa-square-caret-left"
-							title="Previous Project"
-						></span>
-					</button>
-					<button class="project-button next">
-						<span
-							class="fa-regular fa-square-caret-right"
-							title="Next Project"
-						></span>
-					</button>
-				</div>
 
-				<div class="project-images">
-					<img
-						class="projects"
-						src="./assets/dkrim.jpg"
-						alt="Screenshot of DKR.IM website"
-					/>
-					<img
-						class="projects"
-						src="./assets/jelloplanet.jpg"
-						alt="Screenshot of Jelloplanet.com website"
-					/>
-					<img
-						class="projects"
-						src="./assets/reef.jpg"
-						alt="Screenshot of ReefStoreBonaire.com website"
-					/>
-					<img
-						class="projects"
-						src="./assets/oceanreef.jpg"
-						alt="Screenshot of Ocean Reef website"
-					/>
-					<img
-						class="projects"
-						src="./assets/dfb.jpg"
-						alt="Screenshot of Dive Friends Bonaire website"
-					/>
-					<img
-						class="projects"
-						src="./assets/cdt.jpg"
-						alt="Screenshot of Caribbean Dive Trading website"
-					/>
-					<img
-						class="projects"
-						src="./assets/urbanwarfarecenter.jpg"
-						alt="Screenshot of Urban Warfare Center website"
-					/>
-					<img
-						class="projects"
-						src="./assets/opsmedia.jpg"
-						alt="Screenshot of Opsmedia website"
-					/>
-				</div>
-				<div class="project-info">
-					<div>
-						<h3>DKR.IM</h3>
-						<p>
-							My own personal blog running off WordPress. I created my own dive
-							log application and photo gallery using PHP.
-						</p>
-					</div>
-					<div>
-						<h3>Jelloplanet.com</h3>
-						<p>
-							Another personal blog. I have had various websites on this domain
-							since 1999. In the early days it had a guestbook written in Perl.
-							Later I developed a custom CMS, blog, and photo gallery in PHP.
-							The pictured image is when it ran off wordpress.
-						</p>
-					</div>
-					<div>
-						<h3>ReefStoreBonaire.com</h3>
-						<p>
-							I created this website for the REEF brand retail store on the
-							island of Bonaire. A simple one page website with a google map of
-							the location and a selection of items for sale.
-						</p>
-					</div>
-					<div>
-						<h3>OCEAN REEF</h3>
-						<p>
-							A page I designed and created for the Ocean Reef International
-							Training Center in Bonaire. I used assets provided by OCEAN REEF
-							to explain the benefits of diving with the OCEAN Reef integrated
-							dive mask.
-						</p>
-					</div>
-					<div>
-						<h3>Dive Friends Bonaire</h3>
-						<p>
-							Completely redesigned the website for divefriendsbonaire.com. The
-							old website looked very dated and was not responsive. I built a
-							custom theme for wordpress that was modern and mobile friendly.
-						</p>
-					</div>
-					<div>
-						<h3>Caribbean Dive Trading</h3>
-						<p>
-							Single page site I built for a scuba diving equipment wholesaler.
-							Custom theme built for wordpress site.
-						</p>
-					</div>
-					<div>
-						<h3>Urban Warfare Center</h3>
-						<p>
-							A site I built while working for OPSGEAR. I took design made by
-							the company graphic designer and built it into a functioning
-							website.
-						</p>
-					</div>
-					<div>
-						<h3>OpsMedia</h3>
-						<p>
-							Another site built while working for OPSGEAR. The graphic designer
-							provided a photoshop layout which I turned into a working website.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="about">
-			<h2 class="sr-only">About Me</h2>
-			<div class="wrapper">
-				<div class="about-img">
-					<img
-						src="./assets/devin-about.jpg"
-						alt="Devin Raleigh holding a Belgian Malinois puppy"
-					/>
-				</div>
-				<div class="about-div">
-					<h3>Who am I?</h3>
-					<p>
-						I grew up in Utah but have lived and worked in 7 different countries
-						doing a wide variety of
-						<a href="#resume" style="text-decoration: underline">jobs</a>.
-					</p>
-					<p>
-						I enjoy scuba diving, rock climbing, snow skiing, hiking, and pretty
-						much anything outdoors.
-					</p>
-					<p>
-						I am equally happy staying inside coding, debugging, gaming,
-						reading, or watching tv/movie.
-					</p>
-					<p>
-						I love animals (except I'm allergic to cats) and I play the cello
-						and guitar.
-					</p>
-				</div>
-				<button class="btn contact">Contact Me</button>
-			</div>
-		</section>
-		<section id="resume">
-			<div class="wrapper">
-				<h2 class="sr-only">Resume</h2>
-				<h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+		<!-- Vendor CSS Files -->
+		<link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/bootstrap/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+		<link
+			href="assets/vendor/glightbox/css/glightbox.min.css"
+			rel="stylesheet"
+		/>
+		<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+		<!-- Template Main CSS File -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<!-- =======================================================
+  * Template Name: MyResume - v4.7.0
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+	* Customization: Devin Raleigh
+  ======================================================== -->
+	</head>
+
+	<body>
+		<!-- ======= Mobile nav toggle button ======= -->
+		<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+		<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+		<!-- ======= Header ======= -->
+		<header id="header" class="d-flex flex-column justify-content-center">
+			<nav id="navbar" class="navbar nav-menu">
 				<ul>
 					<li>
-						<h4>General Assembly</h4>
-						<p>Software Engineering Immersive</p>
+						<a href="#hero" class="nav-link scrollto active"
+							><i class="bx bx-home"></i> <span>Home</span></a
+						>
 					</li>
 					<li>
-						<h4>University of Utah</h4>
-						<p>B.A. Spanish & International Studies</p>
+						<a href="#about" class="nav-link scrollto"
+							><i class="bx bx-user"></i> <span>About</span></a
+						>
+					</li>
+					<li>
+						<a href="#resume" class="nav-link scrollto"
+							><i class="bx bx-file-blank"></i> <span>Resume</span></a
+						>
+					</li>
+					<li>
+						<a href="#portfolio" class="nav-link scrollto"
+							><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+						>
+					</li>
+					<li>
+						<a href="#contact" class="nav-link scrollto"
+							><i class="bx bx-envelope"></i> <span>Contact</span></a
+						>
 					</li>
 				</ul>
-				<h3><i class="fa-solid fa-laptop-code"></i> Work Experience</h3>
-				<ul>
-					<li>
-						<h4>Web & IT</h4>
-						<p><em>Web developer & Computer repair technician</em></p>
-						<p>
-							Built and maintained websites for a wide range of businesses from
-							e-commerce to tourism to a reggae band. Familiar with array of web
-							technologies including HTML, CSS, Javascript, Python, PHP, MySQL,
-							and PostgreSQL.
-						</p>
-						<p>
-							Provided over the phone tech support and worked as an in-home
-							computer repair technician.
-						</p>
-					</li>
-					<li>
-						<h4>Teaching</h4>
-						<p>
-							<em>Scuba Instructor, English Teacher, Swimming Instructor</em>
-						</p>
-						<p>
-							Worked as a scuba diving instructor for 10 years teaching all
-							levels including instructor training.
-						</p>
-						<p>
-							Taught English as a foreign language in Taiwan and Brazil to
-							students ages 4 to 18.
-						</p>
-						<p>Taught children ages 4-12 how to swim.</p>
-					</li>
-					<li>
-						<h4>Other fun jobs!</h4>
-						<ul class="inline">
-							<li>Cave Diving Guide,</li>
-							<li>Boat Captain,</li>
-							<li>Dive Shop Manager,</li>
-							<li>Equipment Repair Technician,</li>
-							<li>Lifeguard,</li>
-							<li>Customer Service Representative,</li>
-							<li>Waiter,</li>
-							<li>Sales Rep.</li>
-							<li></li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<footer>&copy;2022 Devin Raleigh</footer>
-		<section class="modal-container modal-contact hide">
-			<div class="modal-inner">
-				<button>
+			</nav>
+			<!-- .nav-menu -->
+		</header>
+		<!-- End Header -->
+
+		<!-- ======= Hero Section ======= -->
+		<section id="hero" class="d-flex flex-column justify-content-center">
+			<div class="container" data-aos="zoom-in" data-aos-delay="100">
+				<h1>Devin Raleigh</h1>
+				<p>
 					<span
-						class="fa-regular fa-rectangle-xmark close"
-						title="Close Contact Modal"
+						class="typed"
+						data-typed-items="Full Stack Developer, World Traveler, Adventurer"
 					></span>
-				</button>
-				<h3>Let's get in touch!</h3>
-				<div class="contact-social">
+				</p>
+				<div class="social-links">
 					<a
 						href="https://www.linkedin.com/in/devinkr/"
-						title="My LinkedIn"
 						target="_blank"
-						><i class="fa-brands fa-linkedin"></i
+						class="linkedin"
+						><i class="bx bxl-linkedin"></i
 					></a>
-					<a href="https://github.com/devinkr" target="_blank" title="My GitHub"
-						><i class="fa-brands fa-github"></i
+					<a
+						href="https://www.facebook.com/Devin.Raleigh/"
+						target="_blank"
+						class="facebook"
+						><i class="bx bxl-facebook"></i
 					></a>
 					<a
 						href="https://www.instagram.com/devinkr/"
-						title="My Instagram"
 						target="_blank"
-						><i class="fa-brands fa-instagram"></i
+						class="instagram"
+						><i class="bx bxl-instagram"></i
+					></a>
+					<a href="mailto:devin@devinraleigh.com" target="_blank" class="email"
+						><i class="bx bxs-envelope"></i
 					></a>
 				</div>
-				<form
-					id="contact-form"
-					action="https://formspree.io/f/xeqnnzez"
-					method="POST"
-				>
-					<div>
-						<label for="name">Name:</label>
-						<input id="name" type="text" name="name" required />
-					</div>
-					<div>
-						<label for="email">Email:</label>
-						<input id="email" type="email" name="email" required />
-					</div>
-					<div>
-						<label for="message">Message:</label>
-						<textarea id="message" rows="5" name="message"></textarea>
-					</div>
-					<button type="submit" class="btn">Send</button>
-				</form>
 			</div>
 		</section>
+		<!-- End Hero -->
+
+		<main id="main">
+			<!-- ======= About Section ======= -->
+			<section id="about" class="about">
+				<div class="container" data-aos="fade-up">
+					<div class="section-title">
+						<h2>About</h2>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<img src="assets/img/profile-img.jpg" class="img-fluid" alt="" />
+						</div>
+						<div class="col-lg-8 pt-4 pt-lg-0 content">
+							<h3>Full Stack Developer</h3>
+							<p>
+								I'm an outdoor loving, adventure seeking full stack developer
+								based in Denver with a background in education/training,
+								tourism, customer service, management, and linguistics.
+							</p>
+							<p>
+								I have lived and worked in 7 countries across the globe in a
+								wide variety of industries and from this have developed
+								excellent communication skills while working with diverse teams.
+								Aside from English, I am fluent in Spanish and Portuguese.
+							</p>
+
+							<p>
+								For 9 years I worked as a scuba diving instructor and cave
+								diving guide where planning, teamwork, and attention to detail
+								were critical for safety.
+							</p>
+
+							<p>
+								As a former teacher I am passionate about education and love
+								learning new things. I am always learning new programming languages and
+								frameworks. I also recently started rock climbing!
+							</p>
+							<p>As you can see by the cutie in the photo (not me), I am an animal lover as well.</p>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End About Section -->
+
+			<!-- ======= Skills Section ======= -->
+			<section id="skills" class="skills">
+				<div class="container" data-aos="fade-up">
+					<div class="section-title">
+						<h2>Full Stack Development Skills</h2>
+						<h3 class="mb-4">Languages / Databases</h3>
+						<div class="row">
+							<div class="col-4 col-md-2 p-3">
+									<img
+										src="/assets/img/techicons/javascript.svg"
+										alt="JavaScript"
+										title="JavaScript"
+									/>
+							</div>
+							<div class="col-4 col-md-2 p-3 p-3">
+									<img
+										class="img-fluid"
+										src="/assets/img/techicons/html-5.svg"
+										alt="HTML"
+										title="HTML"
+									/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/css-3.svg"
+									alt="CSS"
+									title="CSS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/python.svg"
+									alt="Python"
+									title="Python"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/php.svg"
+									alt="PHP"
+									title="PHP"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/mongodb.svg"
+									alt="MongoDB"
+									title="MongoDB"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/postgresql-logo.svg"
+									alt="PostgreSQL"
+									title="PostgreSQL"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/mysql.svg"
+									alt="MySQL"
+									title="MySQL"
+								/>
+							</div>
+						</div>
+						<h3 class="mt-5 mb-4">Frameworks / Libraries</h3>
+						<div class="row">
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/nodejs.svg"
+									alt="NodeJS"
+									title="NodeJS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/express.svg"
+									alt="ExpressJS"
+									title="ExpressJS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/react.svg"
+									alt="React"
+									title="React"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/django.svg"
+									alt="Django"
+									title="Django"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/passport.svg"
+									alt="PassportJS"
+									title="PassportJS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/mocha.svg"
+									alt="MochaJS"
+									title="MochaJS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/chai.svg"
+									alt="ChaiJS"
+									title="ChaiJS"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/jest.svg"
+									alt="Jest"
+									title="Jest"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/bootstrap.svg"
+									alt="Bootstrap"
+									title="Bootstrap"
+								/>
+							</div>
+						</div>
+						<h3 class="mt-5 mb-4">Development Tools</h3>
+						<div class="row">
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/git.svg"
+									alt="Git"
+									title="Git"
+								/>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/github.svg"
+									alt="GitHub"
+									title="GitHub"
+								/>
+							</div>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/ubuntu.svg"
+									alt="Ubuntu"
+									title="Ubuntu"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/visual-studio-code.svg"
+									alt="Visual Studio Code"
+									title="Visual Studio Code"
+								/>
+							</div>
+							<div class="col-4 col-md-2 p-3">
+								<img
+									class="img-fluid"
+									src="/assets/img/techicons/agile.svg"
+									alt="Agile"
+									title="Agile"
+								/>
+							</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Skills Section -->
+
+			<!-- ======= Resume Section ======= -->
+			<section id="resume" class="resume">
+				<div class="container" data-aos="fade-up">
+					<div class="section-title">
+						<h2>Resume</h2>
+						<p>
+							<a href="https://devinraleigh.com/DevinRaleigh-resume.pdf" class="btn btn-outline-primary" download="DevinRaleigh-resume.pdf"><i class="bx bxs-file-pdf"></i> Download PDF</a>
+						</p>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="resume-title">Education</h3>
+							<div class="resume-item">
+								<h4>Software Engineering Immersive</h4>
+								<h5>May 2022 - Aug 2022</h5>
+								<p><em>General Assembly</em></p>
+								<p>
+									12 week / 480 hour course covering algorithms, data structures, agile SDLC, TDD, and developing modern accessible full stack web applications using HTML, CSS, JavaScript, React, Express, MongoDB, Node, Python, Django, and PostgresQL.  
+								</p>
+							</div>
+							<div class="resume-item">
+								<h4>BA Spanish &amp; International Studies</h4>
+								<h5>2005 - 2009</h5>
+								<p><em>University of Utah</em></p>
+								<p>
+									Graduated with a double major focusing on Linguistics and Latin-American Studies.
+								</p>
+							</div>
+							<h3 class="resume-title">Work Experience</h3>
+							<div class="resume-item">
+								<h4>Manager | Scuba Instructor | Cave Guide | Equipment Repair Technician | Boat Captain</h4>
+								<h5>2013-2022</h5>
+								<p>Tank-Ha Dive Center, Blue Life, Dive Friends Bonaire, Utila Dive Center</p>
+								<ul>
+									<li>
+										Trained and mentored new instructor candidates who then went on to pass their instructor examinations with 100% pass rate.
+									</li>
+									<li>Guided over 10,000 divers in extreme environments with no diver injuries. Reduced risk by following safety
+									procedures, giving thorough safety briefings, supervision, and quick response.</li>
+									<li>Serviced and repaired vital life support equipment and implemented a regularly scheduled checklist to assure
+											emergency equipment was complete and functioning.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<h3 class="resume-title">Developer Experience</h3>
+							<div class="resume-item">
+								<h4>Full Stack Developer</h4>
+								<h5>2015-2017</h5>
+								<p>Dive Friends Bonaire</p>
+								<ul>
+									<li>Redesigned an unresponsive table based website with static html into a fully responsive and dynamic site with a focus on ease of content creation and SEO.</li>
+								<li>						
+										Achieved top rank in google search results for several key industry search terms.
+								</li>
+								<li>Dramatically increased page views and bookings through website.</li>
+							</ul>
+							</div>
+							<div class="resume-item">
+								<h4>Wordpress Developer</h4>
+								<h5>2012</h5>
+								<p>Amibug Group LLC</p>
+								<ul>
+									<li>Worked with graphic designer to build customized wordpress sites for the 11 businesses operated by Amibug Group.</li>
+								<li>						
+										Launched 6 custom full content websites in 3 months.
+								</li>
+							</ul>
+							</div>
+							<div class="resume-item">
+								<h4>Full Stack Developer</h4>
+								<h5>2006-2007</h5>
+								<p><em>OPSGEAR</em></p>
+								<ul>
+									<li>
+										Designed and implemented a custom support ticket tracking system in PHP which dramatically increased CSR
+										productivity and eliminated customer missed customer support emails.
+									</li>
+									<li>
+										Built and integrated a product review application using HTML, CSS and PHP that could be embedded into a 3rd
+party hosted e-commerce site which only allowed limited HTML and Javascript code in a product page template
+increasing customer time on page and sales.
+									</li>
+									<li>
+										Converted mockups from graphic designer into full dynamic web sites using HTML, CSS, and JavaScript.
+									</li>
+
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Resume Section -->
+
+			<!-- ======= Portfolio Section ======= -->
+			<section id="portfolio" class="portfolio section-bg">
+				<div class="container" data-aos="fade-up">
+					<div class="section-title">
+						<h2>Portfolio</h2>
+					</div>
+
+					<div class="row">
+						<div
+							class="col-lg-12 d-flex justify-content-center"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<ul id="portfolio-filters">
+								<li data-filter="*" class="filter-active">All</li>
+								<li data-filter=".filter-fullstack">Full Stack</li>
+								<li data-filter=".filter-frontend">Frontend</li>
+							</ul>
+						</div>
+					</div>
+
+					<div
+						class="row portfolio-container"
+						data-aos="fade-up"
+						data-aos-delay="200"
+					>
+						<div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/world-weather.jpg"
+									class="img-fluid"
+									alt="World Weather"
+								/>
+								<div class="portfolio-info">
+									<h4>World Weather</h4>
+									<p>Weather Dashboard built in React</p>
+									<a href="ww-details.html" data-glightbox="type: external"
+											title="World Weather" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-fullstack">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/dfb.jpg"
+									class="img-fluid"
+									alt="Dive Friends Bonaire"
+								/>
+								<div class="portfolio-info">
+									<h4>Dive Friends Bonaire</h4>
+									<p>Complete redesign of Divefriendsbonaire.com</p>
+									<a href="dfb-details.html" data-glightbox="type: external"
+											title="World Weather" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/reefstorebonaire.jpg"
+									class="img-fluid"
+									alt="Reef Store Bonaire"
+								/>
+								<div class="portfolio-info">
+									<h4>Reef Store Bonaire</h4>
+									<p>Single page site for Reef&trade; Store</p>
+									<a href="reef-details.html" data-glightbox="type: external"
+											title="World Weather" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-fullstack">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/dkrim.jpg"
+									class="img-fluid"
+									alt="DKR.IM"
+								/>
+								<div class="portfolio-info">
+									<h4>DKR.IM</h4>
+									<p>Custom Photo gallery, and Dive Log App</p>
+									<a href="dkr-details.html" data-glightbox="type: external"
+											title="World Weather" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-fullstack">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/jelloplanet.jpg"
+									class="img-fluid"
+									alt="JelloPlanet"
+								/>
+								<div class="portfolio-info">
+									<h4>JelloPlanet</h4>
+									<p>Custom Photo Gallery</p>
+									<a href="ww-details.html" data-glightbox="type: external"
+											title="World Weather" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-fullstack">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/opsmedia.jpg"
+									class="img-fluid"
+									alt="Opsmedia"
+								/>
+								<div class="portfolio-info">
+									<h4>Opsmedia</h4>
+									<p>Complete launch of Opsmedia.net</p>
+									<a href="opsmedia-details.html" data-glightbox="type: external"
+											title="Opsmedia" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-4 col-md-6 portfolio-item filter-fullstack">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/urbanwarfarecenter.jpg"
+									class="img-fluid"
+									alt="Urban Warfare Center"
+								/>
+								<div class="portfolio-info">
+									<h4>Urban Warfare Center</h4>
+									<p>Complete launch of urbanwarfarecenter.com</p>
+									<a href="uwc-details.html" data-glightbox="type: external"
+											title="Urban Warfare Center" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+							<div class="portfolio-wrap">
+								<img
+									src="assets/img/portfolio/amibug.jpg"
+									class="img-fluid"
+									alt="Amibug Group"
+								/>
+								<div class="portfolio-info">
+									<h4>Amibug Group</h4>
+									<p>Built and launched 6 websites for Amibug Group LLC</p>
+									<a href="amibug-details.html" data-glightbox="type: external"
+											title="Amibug Group" class="portfolio-details-lightbox btn btn-outline-primary mt-4">More Details</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- End Portfolio Section -->
+
+			<!-- ======= Contact Section ======= -->
+			<section id="contact" class="contact">
+				<div class="container" data-aos="fade-up">
+					<div class="section-title">
+						<h2>Contact</h2>
+					</div>
+
+					<div class="row mt-1">
+						<div class="col-lg-4">
+							<div class="info">
+								<div class="email">
+									<i class="bi bi-envelope"></i>
+									<h4>Email:</h4>
+									<p><a href="mailto:devin@devinraleigh.com">devin@devinraleigh.com</a></p>
+								</div>
+
+								<div class="phone">
+									<i class="bi bi-phone"></i>
+									<h4>Call:</h4>
+									<p><a href="tel:8019990626">(801) 999-0626</a></p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-8 mt-5 mt-lg-0">
+							<form
+								method="post"
+								role="form"
+								class="email-form"
+								netlify
+							>
+								<div class="row">
+									<div class="col-md-6 form-group">
+										<input
+											type="text"
+											name="name"
+											class="form-control"
+											id="name"
+											placeholder="Your Name"
+											required
+										/>
+									</div>
+									<div class="col-md-6 form-group mt-3 mt-md-0">
+										<input
+											type="email"
+											class="form-control"
+											name="email"
+											id="email"
+											placeholder="Your Email"
+											required
+										/>
+									</div>
+								</div>
+								<div class="form-group mt-3">
+									<input
+										type="text"
+										class="form-control"
+										name="subject"
+										id="subject"
+										placeholder="Subject"
+										required
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<textarea
+										class="form-control"
+										name="message"
+										rows="5"
+										placeholder="Message"
+										required
+									></textarea>
+								</div>
+								<div class="my-3">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">
+										Your message has been sent. Thank you!
+									</div>
+								</div>
+								<div class="text-center">
+									<button type="submit" class="g-recaptcha" 
+        data-sitekey="6LfC_PogAAAAAKCfdMhM8B43eyeBTe8FJO6wFIWy" 
+        data-callback='onSubmit' 
+        data-action='submit'>Send Message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Contact Section -->
+		</main>
+		<!-- End #main -->
+
+		<!-- ======= Footer ======= -->
+		<footer id="footer">
+			<div class="container">
+				<h3>Devin Raleigh</h3>
+				<div class="social-links">
+					<a
+						href="https://www.linkedin.com/in/devinkr/"
+						target="_blank"
+						class="linkedin"
+						><i class="bx bxl-linkedin"></i
+					></a>
+					<a
+						href="https://www.facebook.com/Devin.Raleigh/"
+						target="_blank"
+						class="facebook"
+						><i class="bx bxl-facebook"></i
+					></a>
+					<a
+						href="https://www.instagram.com/devinkr/"
+						target="_blank"
+						class="instagram"
+						><i class="bx bxl-instagram"></i
+					></a>
+					<a href="mailto:devin@devinraleigh.com" target="_blank" class="email"
+						><i class="bx bxs-envelope"></i
+					></a>
+				</div>
+				<div class="copyright">
+					&copy; 2022 <strong><span>Devin Raleigh</span></strong
+					>. All Rights Reserved
+				</div>
+				<div class="credits">
+					<!-- All the links in the footer should remain intact. -->
+					<!-- You can delete the links only if you purchased the pro version. -->
+					Based on design by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+				</div>
+			</div>
+		</footer>
+		<!-- End Footer -->
+
+		<div id="preloader"></div>
+		<a
+			href="#"
+			class="back-to-top d-flex align-items-center justify-content-center"
+			><i class="bi bi-arrow-up-short"></i
+		></a>
+
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+
+		<!-- Vendor JS Files -->
+		<script src="assets/vendor/aos/aos.js"></script>
+		<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+		<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/typed.js/typed.min.js"></script>
+		<script src="assets/vendor/php-email-form/validate.js"></script>
+
+		<!-- Template Main JS File -->
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
