@@ -792,12 +792,6 @@ section {
 	}
 }
 
-.form-recaptcha {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
