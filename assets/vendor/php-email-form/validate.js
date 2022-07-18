@@ -57,25 +57,12 @@
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then((response) => {
-				if (response.ok) {
-					return response.text();
-				} else {
-					throw new Error(
-						`${response.status} ${response.statusText} ${response.url}`
-					);
-				}
-			})
-			.then((data) => {
-				thisForm.querySelector('.loading').classList.remove('d-block');
-				if (data.trim() == 'OK') {
+				if (response.status === 200) {
 					thisForm.querySelector('.sent-message').classList.add('d-block');
 					thisForm.reset();
 				} else {
 					throw new Error(
-						data
-							? data
-							: 'Form submission failed and no error message returned from: ' +
-							  action
+						`${response.status} ${response.statusText} ${response.url}`
 					);
 				}
 			})
