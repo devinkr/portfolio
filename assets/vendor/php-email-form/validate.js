@@ -58,6 +58,7 @@
 			body: new URLSearchParams(formData).toString(),
 		})
 			.then((response) => {
+				thisForm.querySelector('.loading').classList.remove('d-block');
 				if (response.status === 200) {
 					thisForm.querySelector('.sent-message').classList.add('d-block');
 					thisForm.reset();
