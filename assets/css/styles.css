@@ -11744,12 +11744,6 @@ a.btn svg {
 	min-height: 60px;
 	padding-top: 1rem;
 }
-.top-bar .top-bar-cta {
-	position: absolute;
-	right: 0;
-	padding: 0.5rem 1.25rem;
-	font-size: 0.875rem;
-}
 .social-list a {
 	width: 38px;
 	height: 38px;
